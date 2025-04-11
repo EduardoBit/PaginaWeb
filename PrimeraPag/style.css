@@ -1,0 +1,484 @@
+/* Importacion de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: 	#020000;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ====================Header=============== */
+.header{
+    background-image: url(imagenPagina/fondo3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex ;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #ff5a2c;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.menu.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ff5a2c;
+}
+
+#menu {
+    display: none;
+}
+
+.menu.icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt h1 {
+    font-size:60px;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}   
+
+.header-txt span {
+    color: #ff5a2c;
+}
+/* Animacion suave */
+.header-txt {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+.header-txt p{
+    font-size: 17px;
+    color: #E0e0e0;
+    margin-bottom: 45px;
+}
+/* Diseño de la Tipografía */
+/*  Puedes hacer que la tipografía sea más atractiva y legible 
+utilizando variaciones de fuentes y tamaños en diferentes partes 
+de la página. También podrías añadir un contraste más fuerte 
+entre los títulos y el contenido para facilitar la lectura.*/
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Aumentar el grosor para los títulos */
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+/*  Efecto Parallax para el Fondo*/
+/* El efecto parallax hace que el fondo se mueva a una velocidad 
+diferente al desplazarse por la página. Este es un efecto visual 
+que puede hacer que el sitio se vea más moderno. */
+.header {
+    background-image: url('imagenPagina/fondo3.jpg');
+    background-position: center center;
+    background-attachment: fixed; /* Esto hace el efecto parallax */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+/* ============Botones============= */
+.butons {
+    display: flex;
+}
+
+.btn-1 , .btn-2 , .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #ff5a2c;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #ffffff;
+}
+/* Estado de focus alternativo para usuarios que navegan con teclado */
+.btn-1:focus,
+.btn-2:focus,
+.btn-3:focus {
+    outline: 2px solid #ff5a2c;
+}
+
+/* Animaciones y Transiciones */
+/* Agregar animaciones y transiciones puede hacer que tu 
+sitio se vea más interactivo y atractivo. Por ejemplo, podrías 
+añadir una transición suave cuando los elementos cambian de 
+estado (como cuando un botón cambia de color al pasar el mouse 
+sobre él). También podrías animar algunos 
+elementos en el encabezado o las secciones al hacer scroll. */
+/* transición para que el cambio sea más suave */
+.btn-1,
+.btn-2,
+.btn-3 {
+    transition: background-color 0.3s ease;
+}
+.btn-1:hover, .btn-2:hover, .btn-3:hover {
+    background-color: #ff5a2c;
+    transform: scale(1.05); /* Efecto de aumento de tamaño */
+}
+/* Botones Flotantes o Call to Action */
+
+
+/* ===========Juegos Populares========== */
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+h2 {
+    color: #ffffff;
+    font-size:  35px;
+    margin-bottom: 45px;
+}
+
+.popular-content{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-content img {
+    width: 150px;
+}
+/* ==========Productos======== */
+.product-content {
+    display:  grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px;
+    
+}
+.product-1 {
+    background-color: #3f3456;
+}
+/* Sombra a las imagenes */
+.product-1 img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+.product-txt {
+    padding: 50px 30px;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    font-size:  20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+.price p {
+    font-size: 17px;
+    color: #ff5a2c;
+}
+
+.btn-3{
+    padding: 5px 25px;
+
+    margin-right: 0;
+}
+
+.contact {
+    padding: 150px 300px;
+}
+
+.contact-content {
+    background-color: #2a223a;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    padding: 18px 25px;
+    background-color: #3f3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color:#ffffff;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: #E0e0e0;
+    font-size: 17px;
+}
+
+.btn-3 {
+    cursor: pointer;
+    margin-right: 0;
+}
+
+/*Mejoras en el Footer  */
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2a223a;
+    padding: 20px;
+    text-align: center;
+}
+/* Fondo de icono 
+FAB flotante, renombrado para evitar conflicto 
+.fab-button { 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    color: #fff; 
+    background-color: #020000; 
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+} */
+
+/* .fab-button:hover { 
+    transform: scale(1.1);
+    background-color: #ff5a2c; 
+} */
+
+/* Iconos redes sociales */
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+/* Cambios de color por red social */
+.social-icons a i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i.fa-whatsapp {
+    color: #25D366;
+}
+
+.social-icons a:hover i.fa-instagram {
+    color: #E1306C;
+}
+
+.social-icons a:hover i.fa-twitter{
+    color: #00a7f5;
+}
+
+/* Link */
+.link ul {
+    display: flex;
+}
+.link ul li > a{
+    font-size: 17px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover{
+    color:#ff5a2c;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Por si en pantallas pequeñas los elementos no caben en una sola línea */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+    background-color: #000000; /* Color de fondo opcional */
+    font-size: 15px;
+    border-radius: 10px; /* Bordes redondeados opcional */
+}
+
+/* Menu Para tablets */
+@media (max-width:991px) {
+    .menu{
+        padding:  20px;
+    }
+        /* Mostrar label para el ícono en dispositivos pequeños */
+    .menu label{
+        display: block;
+    }
+    /* reducir el tamaño del icono */
+    .menu-icono {
+        width: 25px; /* o el tamaño que desees */
+        height: auto; /* mantiene proporción */
+    }
+ /* Ocultar el menú por defecto */
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff5a2c;
+        display: none;
+    }
+
+    /* Estilos adicionales para el menú en dispositivos móviles */
+    .menu .navbar ul li a:hover{
+        color: #1b1726;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    /* Mostrar el menú cuando el checkbox esté checked */
+    /* el signo es con alt + 126 */
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .header-txt h1{
+        font-size: 3.75rem;/* Equivalente a 60px si 1rem = 16px */
+        margin-bottom: 1.56rem;/* 25px aprox. */
+    }
+
+    .butons{
+        justify-content: center;
+    }
+
+    .btn-1:last-of-type{
+        margin-right: 0;
+
+    }
+
+    .popular{
+        display: none;
+    }
+
+    .product {
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+
+    .product-1 img {
+        width: 100%;
+    }
+    .contact {
+        padding: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+    input{
+        margin: 0 0 20px 0;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        margin-top: 20px;
+    }
+}
