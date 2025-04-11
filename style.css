@@ -47,6 +47,7 @@ img{
 
 .logo{
     color: #ff5a2c;
+    padding: 20px;
     font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
@@ -405,13 +406,14 @@ FAB flotante, renombrado para evitar conflicto
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #ff5a2c;
+        background-color: #020000;
         display: none;
+        z-index: 1000;
     }
 
     /* Estilos adicionales para el menú en dispositivos móviles */
     .menu .navbar ul li a:hover{
-        color: #1b1726;
+        color: #ff5a2c;
     }
 
     .menu .navbar ul li {
